@@ -1,0 +1,6 @@
+@AddressServiceEndPoints_HostAddress = http://localhost:5146
+
+GET {{AddressServiceEndPoints_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

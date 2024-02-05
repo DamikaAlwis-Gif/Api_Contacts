@@ -22,7 +22,19 @@
         }
       ],
       "UpstreamPathTemplate": "/Contacts/{id}",
-      "UpstreamHttpMethod": [ "GET", "PUT","DELETE" ]
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Addresses",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7248
+        }
+      ],
+      "UpstreamPathTemplate": "/Addresses",
+      "UpstreamHttpMethod": [ "GET", "PUT"]
     }
   ],
   "GlobalConfiguration": {
